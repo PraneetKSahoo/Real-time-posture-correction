@@ -37,3 +37,11 @@ When bad posture is detected for ≥2.1 seconds:
 - Arduino turns vibration motors **ON** (HIGH) for 1.5 seconds → user feels haptic buzz as alert
 - Motors turn **OFF** automatically
 - 5-second cooldown prevents constant buzzing
+
+## DEMO Video
+
+
+https://github.com/user-attachments/assets/ba033375-62e0-401a-993d-d5b95429a369
+
+
+<p align="center"><strong>Demo: Real-time posture monitoring with haptic vibration alert on wrong posture</strong></p>
