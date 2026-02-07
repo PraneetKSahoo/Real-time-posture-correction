@@ -1,6 +1,6 @@
 # Real-Time Posture Correction System
 
-This project uses real-time human pose estimation to monitor posture from a webcam, classify it as **Correct** or **Wrong** based on spinal angle, provide visual feedback, record video, log data to CSV, and alert via Wi-Fi to an **Arduino** board that lights up LEDs during prolonged bad posture.
+This project uses real-time human pose estimation to monitor posture from a webcam, classify it as **Correct** or **Wrong** based on spinal angle, provide visual feedback, record video, log data to CSV, and alert via Wi-Fi to an **Arduino** board that send tactile vibration during prolonged bad posture.
 
 https://github.com/PraneetKSahoo/Real-time-posture-correction
 
