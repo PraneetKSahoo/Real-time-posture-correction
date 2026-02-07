@@ -16,10 +16,13 @@ https://github.com/PraneetKSahoo/Real-time-posture-correction
 ## Hardware Required
 
 - Computer with webcam
-- [**Arduino UNO WiFi Rev2**](https://docs.arduino.cc/hardware/uno-wifi-rev2) (or compatible board using WiFiS3 library, e.g. UNO R4 WiFi)
+- [**Arduino UNO R4 WiFi**](https://docs.arduino.cc/hardware/uno-r4-wifi/) (or compatible board using WiFiS3 library, e.g. UNO R4 WiFi)
 - **4× mini coin vibration motors** (3V DC, ~12000 RPM, flat/button type — e.g. 10×3 mm models commonly sold on Amazon/AliExpress)
 - Appropriate wiring/resistors if needed (most coin motors can be driven directly from Arduino pins at 3V, but check current draw)
 - Same Wi-Fi network for PC and Arduino
+
+### Why Vibration Motors?
+Instead of visible LEDs, coin vibration motors provide discreet, tactile feedback — ideal for posture correction without drawing attention (e.g., in office/class settings). Typical specs: 3V DC, 70–100 mA, 10,000–12,000 RPM.
 
 ## Setup & Run
 
@@ -32,14 +35,19 @@ https://github.com/PraneetKSahoo/Real-time-posture-correction
 
 ## How It Works – Feedback
 
-When bad posture is detected for ≥2.1 seconds:
+When bad posture is detected for ≥3 seconds:
 - Python script sends HTTP GET to Arduino (`/LED=ODD` — endpoint name kept for simplicity)
 - Arduino turns vibration motors **ON** (HIGH) for 1.5 seconds → user feels haptic buzz as alert
 - Motors turn **OFF** automatically
 - 5-second cooldown prevents constant buzzing
 
-## DEMO Video
+## Arduino x motors setup
 
+![content](https://github.com/user-attachments/assets/3eac40aa-0188-4d77-afb0-ad8324614a4b)
+
+<p align="center"><strong>The setup. You can use a power bank to power it by plugging it in type-c</strong></p>
+
+## Demo video
 
 https://github.com/user-attachments/assets/ba033375-62e0-401a-993d-d5b95429a369
 
