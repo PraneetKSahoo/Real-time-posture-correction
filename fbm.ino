@@ -1,8 +1,8 @@
 #include <WiFiS3.h>
 #include <WiFiServer.h>
 
-const char* ssid = "iPhone v";         // Replace with your Wi-Fi network
-const char* password = "valbashir";    // Replace with your Wi-Fi password
+const char* ssid = "<wifi_name>";         // Replace with your Wi-Fi network
+const char* password = "<wifi_password>";    // Replace with your Wi-Fi password
 
 WiFiServer server(80); // Web server on port 80
 
